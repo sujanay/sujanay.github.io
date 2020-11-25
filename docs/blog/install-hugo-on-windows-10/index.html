@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Install Hugo on Windows 10 &middot; Sujan Tamang </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.78.2" />
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="sujanay.github.io/css/nix.css">
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata%7COpen+Sans%7CConcert+One" rel="stylesheet">
+
+
+
+
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+      <a class="navbar-brand" id="green-terminal" href='/'>
+        sujanay@sujantamang.com ~ $
+      </a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href='/'>/home/sujanay</a>
+        </li>
+        
+				
+				
+				<li class="dropdown">
+                    
+            		<a href="sujanay.github.io/about">~/about</a>
+            		
+        		</li>
+        		
+				
+				<li class="dropdown">
+                    
+            		<a href="sujanay.github.io/sujanay.github.io/blog">~/blog</a>
+            		
+        		</li>
+        		
+				
+				<li class="dropdown">
+                    
+            		<a href="sujanay.github.io/sujanay.github.io/contact">~/contact</a>
+            		
+        		</li>
+        		
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="flex-wrapper">
+            <div class="container wrapper">
+                <h1><a href="sujanay.github.io/blog/install-hugo-on-windows-10/">Install Hugo on Windows 10</a></h1>
+                <span class="post-date">2020-11-21 </span>
+                <div class="post-content">
+                    <h2 id="what-is-hugo">What is Hugo?</h2>
+<p><a href="https://gohugo.io/">Hugo</a> is an open-source static site generator.</p>
+<h2 id="how-to-install">How to install?</h2>
+<p>As mentioned <a href="https://gohugo.io/getting-started/installing">here</a>, there are few other package management tool that you can use to install <strong>Hugo</strong> on Windows. I found installing with binaries as the easiest way to install Hugo. Follow the instructions below to install Hugo using binary.</p>
+<h3 id="1-download-any-desired-release-version">1. Download any desired release version</h3>
+<p>Visit <a href="https://github.com/gohugoio/hugo/releases">github release page</a> for Hugo and download binary release of your choice. For instance <strong>hugo_0.78.2_Windows-64bit.zip</strong></p>
+<h3 id="2-extract-and-add-to-path">2. Extract and add to <code>PATH</code></h3>
+<p>After you&rsquo;ve downloaded the binary, extract it in any folder you like. If you extracted inside a folder (<strong>hugo</strong>) in <strong>D:&gt;</strong> so that the path to your extracted <strong>hugo.exe</strong> file is <strong>D:\hugo\hugo.exe</strong> then, add
+<strong>D:\hugo</strong> in your environment <strong>PATH</strong> variable.</p>
+<h3 id="3-test-the-installation">3. Test the installation</h3>
+<p>Open a terminal window and type <strong>hugo new site first_site</strong>. If your installation was successful then you should see something like</p>
+<pre><code>Congratulations! Your new Hugo site is created in P:\first_site.
+
+Just a few more steps and you're ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &quot;hugo new &lt;SECTIONNAME&gt;\&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+3. Start the built-in live server via &quot;hugo server&quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+</code></pre><p>If you get an error then make sure you&rsquo;ve correctly executed <strong>step 2</strong>.</p>
+
+                </div>
+                
+                <div class="post-comments">
+                    
+                </div>
+                
+            </div>
+            <footer class="footer text-center">
+<p>Copyright &copy; 2020 Sujan Tamang -
+<span class="credit">
+	Powered by
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.
+</span>
+</p>
+</footer>
+
+        </div>
+    </body>
