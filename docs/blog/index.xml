@@ -26,8 +26,8 @@ How to install? As mentioned here, there are few other package management tool t
       <guid>https://sujanay.github.io/blog/building-portfolio-site-using-hugo-and-nix/</guid>
       <description>Download and Extract nix theme Download and extract nix theme from github
 Create a new site and extract theme First create a new site using below command.
-hugo new site portfolio_site This will create a directory called portfolio_site. Extract the nix theme downloaded in previous step inside portfolio_site/themes/. Your final directory structure should inside your newly created portfolio_site should look something like
-├───archetypes ├───content ├───data ├───layouts ├───static └───themes └───hugo-theme-nix ├───archetypes ├───exampleSite │ ├───content │ │ └───post │ └───static ├───i18n ├───images ├───layouts │ ├───partials │ └───_default └───static └───css If you need help installing hugo on windows then checkout my blog install-hugo-on-windows-10.</description>
+hugo new site portfolio_siteThis will create a directory called portfolio_site. Extract the nix theme downloaded in previous step inside portfolio_site/themes/. Your final directory structure should inside your newly created portfolio_site should look something like
+├───archetypes├───content├───data├───layouts├───static└───themes└───hugo-theme-nix├───archetypes├───exampleSite│ ├───content│ │ └───post│ └───static├───i18n├───images├───layouts│ ├───partials│ └───_default└───static└───cssIf you need help installing hugo on windows then checkout my blog install-hugo-on-windows-10.</description>
     </item>
     
     <item>
