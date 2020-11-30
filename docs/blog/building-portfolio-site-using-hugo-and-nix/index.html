@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Building Portfolio Site Using Hugo and Nix &middot; Sujan Tamang </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.78.2" />
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://sujanay.github.io/css/nix.css">
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata%7COpen+Sans%7CConcert+One" rel="stylesheet">
+
+
+
+
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+      <a class="navbar-brand" id="green-terminal" href='https://sujanay.github.io/'>
+        sujanay@sujantamang.com ~ $
+      </a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href='https://sujanay.github.io/'>/home/sujanay</a>
+        </li>
+        
+				
+				
+				<li class="dropdown">
+                    
+            		<a href="https://sujanay.github.io/about">~/about</a>
+            		
+        		</li>
+        		
+				
+				<li class="dropdown">
+                    
+            		<a href="https://sujanay.github.io/blog">~/blog</a>
+            		
+        		</li>
+        		
+				
+				<li class="dropdown">
+                    
+            		<a href="https://sujanay.github.io/contact">~/contact</a>
+            		
+        		</li>
+        		
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="flex-wrapper">
+            <div class="container wrapper">
+                <h1><a href="https://sujanay.github.io/blog/building-portfolio-site-using-hugo-and-nix/">Building Portfolio Site Using Hugo and Nix</a></h1>
+                <span class="post-date">2020-11-21 </span>
+                <div class="post-content">
+                    <h2 id="download-and-extract-nix-theme">Download and Extract nix theme</h2>
+<p>Download and extract nix theme from <a href="https://github.com/LordMathis/hugo-theme-nix">github</a></p>
+<h2 id="create-a-new-site-and-extract-theme">Create a new site and extract theme</h2>
+<p>First create a new site using below command.</p>
+<pre><code>hugo new site portfolio_site
+</code></pre><p>This will create a directory called <strong>portfolio_site</strong>. Extract the <strong>nix</strong> theme downloaded in previous step inside <strong>portfolio_site/themes/</strong>. Your final directory structure should inside your newly created <strong>portfolio_site</strong> should look something like</p>
+<pre><code>├───archetypes
+├───content
+├───data
+├───layouts
+├───static
+└───themes
+    └───hugo-theme-nix
+        ├───archetypes
+        ├───exampleSite
+        │   ├───content
+        │   │   └───post
+        │   └───static
+        ├───i18n
+        ├───images
+        ├───layouts
+        │   ├───partials
+        │   └───_default
+        └───static
+            └───css
+</code></pre><p>If you need help installing <strong>hugo</strong> on windows then checkout my blog <strong>install-hugo-on-windows-10</strong>.</p>
+<h2 id="update-configtoml-file">Update <code>config.toml</code> file</h2>
+<p>Navigate to your <code>portfolio_site/config.toml</code> file which should have</p>
+<pre><code>baseURL = &quot;http://example.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My New Hugo Site&quot;
+</code></pre><p>Now update the <code>config.toml</code> file as below to insert different accounts (eg. github, linkedin etc). You can find more info here about what&rsquo;s available.</p>
+<pre><code>baseURL = &quot;your_site.com&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Your Site Title&quot;
+theme = &quot;hugo-theme-nix&quot; # change this if you have saved with different name
+
+[params]
+  Name = &quot;First Last&quot;
+  HeaderUsername = &quot;&quot;
+  HeaderHostname = &quot;&quot;
+  About = &quot;Short bio&quot;
+  ProfilePicture = &quot;your_pic.jpg&quot; # This picture should be in portfolio_site/static/
+  Email = &quot;your_email&quot;
+  GithubID = &quot;your github handle&quot;
+  GitlabId = &quot;your gitlab handle&quot;
+  LinkedInID = &quot;your linkedin handle&quot;
+</code></pre><h2 id="start-hugo-server">Start <code>hugo server</code></h2>
+<p>Open a terminal and <code>cd</code> into <strong>portfolio_site</strong> where you have your <code>config.toml</code> file. Type</p>
+<pre><code>hugo server
+</code></pre><p>You should see a link with <code>http://localhost:1313/</code>. Navigate to that link in the browser and now you should see your website.</p>
+<h2 id="create-menu">Create menu</h2>
+<p>Add <code>menu</code> section as below.</p>
+<pre><code>[menu]
+  [[menu.header]]
+    name = &quot;about&quot;
+    weight = 0
+    url = &quot;about&quot;  # This is expecting about.md file in &quot;portfolio_site/content/&quot;
+                   # Which can be created by running &quot;hugo new about.md&quot; in the terminal
+
+  [[menu.header]]
+    name = &quot;blog&quot;
+    weight = 0
+    url = &quot;/blog&quot;  # This will render &lt;filename&gt;.md inside &quot;portfolio_site/content/blog/&quot;
+                   # Can be created by running &quot;hugo new blog/some_file.md&quot; in the terminal
+
+  [[menu.header]]
+    name = &quot;contact&quot;
+    weight = 0
+    url = &quot;contact&quot; # see comment above
+</code></pre><h2 id="create-blogs">Create blogs</h2>
+<p>If you&rsquo;ve worked with markdown before then creating blogs is easy with <code>hugo</code>. To create a new blog run the following command in the terminal.</p>
+<pre><code>hugo new blog_one.md
+</code></pre><p>This will create <code>blog_one.md</code> file inside <strong>portfolio_site/content/</strong>. Open the file and put your content there.</p>
+<p>If you want to organize your blogs into differnt folder then you can do so with</p>
+<pre><code>hugo new blog/blog_two.md
+</code></pre><p>This command will create <code>blog_two.md</code> file inside <strong>portfolio_site/content/blog/</strong>. Edit the file and your changes will be reflected in the website.</p>
+<p><strong>NOTE</strong>: If you see the top section of any of the <code>.md</code> file (eg. blog_one.md) then you&rsquo;ll see <code>draft: true</code>. Therefore while running the <code>hugo</code> server you may want to use <code>-D</code> option to see these <code>draft</code>s. The command would be</p>
+<pre><code>hugo server -D
+</code></pre><p>This will display all the markdown files you&rsquo;ve added so far.</p>
+<h2 id="final-content-of-the-configtoml">Final content of the <code>config.toml</code></h2>
+<p>Your final content inside <code>config.toml</code> should look something like</p>
+<pre><code>baseURL = &quot;your_site.com&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Your Site Title&quot;
+theme = &quot;hugo-theme-nix&quot; # change this if you have saved with different name
+
+[params]
+  Name = &quot;First Last&quot;
+  HeaderUsername = &quot;&quot;
+  HeaderHostname = &quot;&quot;
+  About = &quot;Short bio&quot;
+  ProfilePicture = &quot;your_pic.jpg&quot; # This picture should be in portfolio_site/static/
+  Email = &quot;your_email&quot;
+  GithubID = &quot;your github handle&quot;
+  GitlabId = &quot;your gitlab handle&quot;
+  LinkedInID = &quot;your linkedin handle&quot;
+
+[menu]
+  [[menu.header]]
+    name = &quot;about&quot;
+    weight = 0
+    url = &quot;about&quot;  
+
+  [[menu.header]]
+    name = &quot;blog&quot;
+    weight = 0
+    url = &quot;/blog&quot; 
+
+  [[menu.header]]
+    name = &quot;contact&quot;
+    weight = 0
+    url = &quot;contact&quot;
+</code></pre><h2 id="serving-on-aws-s3">Serving on AWS S3</h2>
+<p>If you&rsquo;re planning to host your <strong>portfolio_site</strong> in <strong>S3</strong> then change the <code>baseURL</code> in your <code>config.toml</code> to your <code>S3</code> bucket website endpoint.</p>
+<pre><code>baseURL = &quot;http://&lt;your_s3_bucket_name&gt;.s3-website.&lt;aws_region&gt;.amazonaws.com/&quot;
+</code></pre><p>I hope this was helpful. Happy learning !!!</p>
+
+                </div>
+                
+                <div class="post-comments">
+                    
+                </div>
+                
+            </div>
+            <footer class="footer text-center">
+<p>Copyright &copy; 2020 Sujan Tamang -
+<span class="credit">
+	Powered by
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.
+</span>
+</p>
+</footer>
+
+        </div>
+    </body>

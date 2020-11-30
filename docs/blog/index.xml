@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Sujan Tamang</title>
+    <link>https://sujanay.github.io/blog/</link>
+    <description>Recent content in Blogs on Sujan Tamang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2020 20:11:16 -0500</lastBuildDate><atom:link href="https://sujanay.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Hugo on Windows 10</title>
+      <link>https://sujanay.github.io/blog/install-hugo-on-windows-10/</link>
+      <pubDate>Sat, 21 Nov 2020 20:11:16 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/blog/install-hugo-on-windows-10/</guid>
+      <description>What is Hugo? Hugo is an open-source static site generator.
+How to install? As mentioned here, there are few other package management tool that you can use to install Hugo on Windows. I found installing with binaries as the easiest way to install Hugo. Follow the instructions below to install Hugo using binary.
+1. Download any desired release version Visit github release page for Hugo and download binary release of your choice.</description>
+    </item>
+    
+    <item>
+      <title>Building Portfolio Site Using Hugo and Nix</title>
+      <link>https://sujanay.github.io/blog/building-portfolio-site-using-hugo-and-nix/</link>
+      <pubDate>Sat, 21 Nov 2020 18:41:07 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/blog/building-portfolio-site-using-hugo-and-nix/</guid>
+      <description>Download and Extract nix theme Download and extract nix theme from github
+Create a new site and extract theme First create a new site using below command.
+hugo new site portfolio_siteThis will create a directory called portfolio_site. Extract the nix theme downloaded in previous step inside portfolio_site/themes/. Your final directory structure should inside your newly created portfolio_site should look something like
+├───archetypes├───content├───data├───layouts├───static└───themes└───hugo-theme-nix├───archetypes├───exampleSite│ ├───content│ │ └───post│ └───static├───i18n├───images├───layouts│ ├───partials│ └───_default└───static└───cssIf you need help installing hugo on windows then checkout my blog install-hugo-on-windows-10.</description>
+    </item>
+    
+    <item>
+      <title>Installing Pyspark</title>
+      <link>https://sujanay.github.io/blog/installing-pyspark/</link>
+      <pubDate>Sat, 21 Nov 2020 18:36:45 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/blog/installing-pyspark/</guid>
+      <description>What is PySpark? Spark is a distrubuted Big Data processing framework. If you use python then you can use PySpark which is the python api for Spark to process Big Data.
+How to install? Since PySpark is a distributed data processing framework, people use it by creating cluster. There are various clould provider such as AWS, Databricks, Clouder that allows you to create cluster. You can also install PySpark in standalone mode in your personal computer.</description>
+    </item>
+    
+  </channel>
+</rss>

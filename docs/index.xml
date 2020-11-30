@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sujan Tamang</title>
+    <link>https://sujanay.github.io/</link>
+    <description>Recent content on Sujan Tamang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2020 20:11:16 -0500</lastBuildDate><atom:link href="https://sujanay.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Hugo on Windows 10</title>
+      <link>https://sujanay.github.io/blog/install-hugo-on-windows-10/</link>
+      <pubDate>Sat, 21 Nov 2020 20:11:16 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/blog/install-hugo-on-windows-10/</guid>
+      <description>What is Hugo? Hugo is an open-source static site generator.
+How to install? As mentioned here, there are few other package management tool that you can use to install Hugo on Windows. I found installing with binaries as the easiest way to install Hugo. Follow the instructions below to install Hugo using binary.
+1. Download any desired release version Visit github release page for Hugo and download binary release of your choice.</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://sujanay.github.io/resume/</link>
+      <pubDate>Sat, 21 Nov 2020 18:51:06 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/resume/</guid>
+      <description>TODO: ADD THE MISSING SECTION Highlights Experience Data Scientist
+The Climate Corporation, St. Louis, MO | 2019 - Present
+Working on analyzing customer&amp;rsquo;s agronomic data to create value to our customers and the company.
+ Successfully built data processing pipeline using PySpark that processes ~5TB of customer&amp;rsquo;s agronomic data in spark cluster at user specified cadence. Performed EDA on the customer data and created insights to support various business decisions. Worked on customer segmentation to provide tailored solutions to customers.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://sujanay.github.io/contact/</link>
+      <pubDate>Sat, 21 Nov 2020 18:44:18 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/contact/</guid>
+      <description>If you&amp;rsquo;d like to talk to me please reach out via email or linkedin and we can book a block a time to chat.
+Email: sujanay@hotmail.com
+Linkedin: Sujan Tamang</description>
+    </item>
+    
+    <item>
+      <title>Building Portfolio Site Using Hugo and Nix</title>
+      <link>https://sujanay.github.io/blog/building-portfolio-site-using-hugo-and-nix/</link>
+      <pubDate>Sat, 21 Nov 2020 18:41:07 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/blog/building-portfolio-site-using-hugo-and-nix/</guid>
+      <description>Download and Extract nix theme Download and extract nix theme from github
+Create a new site and extract theme First create a new site using below command.
+hugo new site portfolio_siteThis will create a directory called portfolio_site. Extract the nix theme downloaded in previous step inside portfolio_site/themes/. Your final directory structure should inside your newly created portfolio_site should look something like
+├───archetypes├───content├───data├───layouts├───static└───themes└───hugo-theme-nix├───archetypes├───exampleSite│ ├───content│ │ └───post│ └───static├───i18n├───images├───layouts│ ├───partials│ └───_default└───static└───cssIf you need help installing hugo on windows then checkout my blog install-hugo-on-windows-10.</description>
+    </item>
+    
+    <item>
+      <title>Installing Pyspark</title>
+      <link>https://sujanay.github.io/blog/installing-pyspark/</link>
+      <pubDate>Sat, 21 Nov 2020 18:36:45 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/blog/installing-pyspark/</guid>
+      <description>What is PySpark? Spark is a distrubuted Big Data processing framework. If you use python then you can use PySpark which is the python api for Spark to process Big Data.
+How to install? Since PySpark is a distributed data processing framework, people use it by creating cluster. There are various clould provider such as AWS, Databricks, Clouder that allows you to create cluster. You can also install PySpark in standalone mode in your personal computer.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://sujanay.github.io/about/</link>
+      <pubDate>Sat, 21 Nov 2020 18:33:20 -0500</pubDate>
+      
+      <guid>https://sujanay.github.io/about/</guid>
+      <description>My name is Sujan Tamang and I&amp;rsquo;m from Nepal.
+I completed my undergraduate from Pulchowk Campus, Institute of Engineering, Tribhuvan University from Nepal in Electronics and Communication Engineering. After that I did my Masters in Computing and Information Systems from Youngstown State University, OH.
+I love to spend time with my wife cooking and enjoying different food receipe. During my free time I try to learn new technology and contribute in StackOverflow.</description>
+    </item>
+    
+  </channel>
+</rss>
