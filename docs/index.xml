@@ -24,7 +24,8 @@ How to install? As mentioned here, there are few other package management tool t
       <pubDate>Sat, 21 Nov 2020 18:51:06 -0500</pubDate>
       
       <guid>https://sujanay.github.io/resume/</guid>
-      <description>Experience Data Scientist
+      <description>View Resume (pdf)
+Experience Data Scientist
 The Climate Corporation | St. Louis, MO | Jul 2019 - Jan 2021
 Working on analyzing customer&amp;rsquo;s agronomic data to create value to our customers and the company.
  Successfully built data processing pipeline using PySpark that processes ~5TB of customer&amp;rsquo;s agronomic data in spark cluster at user specified cadence. Performed EDA on the customer data and created insights to support various business decisions. Worked on customer segmentation to provide tailored solutions to customers.</description>
